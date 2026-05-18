@@ -1,0 +1,886 @@
+{
+  "schema_version": 1,
+  "candidate_flow_version": "0.4.53",
+  "generated_at": "2026-05-18T15:12:52+00:00",
+  "candidate_count": 84,
+  "candidates": [
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_EBF5257483",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T15:12:34+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_EBF5257483.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_D923103802",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T15:12:34+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_D923103802.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_33ED888462",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T15:12:34+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_33ED888462.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_D7A7F7E84F",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T15:12:34+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_D7A7F7E84F.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_37BF7B8566",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T15:12:34+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_37BF7B8566.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_5E9E389E95",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T15:12:34+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_5E9E389E95.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_12BB4E3FCC",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:47:56+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_12BB4E3FCC.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9F35AA1766",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:47:56+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9F35AA1766.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_92520159A1",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:47:56+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_92520159A1.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_7CB91552D1",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:47:56+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_7CB91552D1.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_15C4CB7E87",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:47:56+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_15C4CB7E87.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_73ECCE0789",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:47:56+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_73ECCE0789.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_F1BFA0C009",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:33:21+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_F1BFA0C009.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_AD06D20C64",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:33:21+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_AD06D20C64.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_5735AD2278",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:33:20+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_5735AD2278.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_444D7EB22E",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:33:20+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_444D7EB22E.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_8AD83B23DA",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:33:20+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_8AD83B23DA.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_7F0E2298BD",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:33:20+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_7F0E2298BD.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DDB0744730",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:24:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DDB0744730.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_BCE311C3EB",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:24:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_BCE311C3EB.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_22022486D7",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:24:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_22022486D7.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_5E1F90ACFB",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:24:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_5E1F90ACFB.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_3C36D4740B",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:24:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_3C36D4740B.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_10A71C06A6",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:24:30+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_10A71C06A6.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_8F677FB227",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:18:43+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_8F677FB227.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9C7EFBE60F",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:18:43+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9C7EFBE60F.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_464EE50300",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:18:43+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_464EE50300.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_DD778A8041",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:18:43+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_DD778A8041.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_25172C62CF",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:18:43+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_25172C62CF.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_8EF8DDB129",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:18:43+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_8EF8DDB129.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DA2C15C545",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:11:37+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DA2C15C545.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_F7CCE6E969",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:11:37+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_F7CCE6E969.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_175096CACC",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:11:37+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_175096CACC.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_8C38F87599",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:11:37+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_8C38F87599.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_04477F7572",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:11:37+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_04477F7572.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_C550FE0F8E",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:11:37+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_C550FE0F8E.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_B0930CB7C3",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:06:46+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_B0930CB7C3.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_812DC0642B",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:06:46+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_812DC0642B.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_0473DFF672",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:06:45+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_0473DFF672.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_E1B987A677",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:06:45+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_E1B987A677.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_09769EF046",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:06:45+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_09769EF046.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_41CB69F65A",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T14:06:45+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_41CB69F65A.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_1A6FD8E4F2",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T13:44:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_1A6FD8E4F2.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_2AD03BA6EF",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T13:44:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_2AD03BA6EF.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_9935316A58",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T13:44:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_9935316A58.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_A95D17BBE0",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T13:44:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_A95D17BBE0.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_79CC603362",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T13:44:31+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_79CC603362.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_7D21410C52",
+      "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T13:44:30+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_7D21410C52.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:31:11+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_6BC70433EB",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:31:00+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_6BC70433EB.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_4068A05FBE",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:30:49+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_4068A05FBE.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:30:35+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_1396AB3BF6",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:30:22+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_1396AB3BF6.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_7B47DB4696",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:30:08+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_7B47DB4696.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_2B3AAE1460",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:24:24+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_2B3AAE1460.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_B13AC4E830",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:24:13+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_B13AC4E830.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_BE356F23DD",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:24:01+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_BE356F23DD.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_9E476CFA89",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:23:47+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_9E476CFA89.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_AEACAF1FC3",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:23:33+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_AEACAF1FC3.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_94340E8F82",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T05:23:19+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_94340E8F82.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DACEC4E3D2",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:58:53+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DACEC4E3D2.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9AFC4499EE",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:58:41+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9AFC4499EE.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_A504835F56",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:58:30+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_A504835F56.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_9F441D8823",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:58:15+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_9F441D8823.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_8633C0A3D1",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:58:02+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_8633C0A3D1.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_E3C04F6AD4",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:57:48+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_E3C04F6AD4.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_23B8607EDE",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:43:46+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_23B8607EDE.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_BD0985642E",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:43:34+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_BD0985642E.json"
+    },
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_7D138B604C",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:43:23+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_7D138B604C.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_F9DAB96E24",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:43:09+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_F9DAB96E24.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_balanced_FEB0A5F012",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:42:55+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_balanced_FEB0A5F012.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_conservative_487B8DE8D1",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-18T04:42:42+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_conservative_487B8DE8D1.json"
+    },
+    {
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_drawdown_protection_4AF6355A6B",
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "regime": "BULL_PULLBACK",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:59:13+00:00",
+      "direction": "drawdown_protection",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_drawdown_protection_4AF6355A6B.json"
+    },
+    {
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_reduce_fee_churn_36DB8F1A80",
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "regime": "BULL_PULLBACK",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:59:08+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_reduce_fee_churn_36DB8F1A80.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_manual_drawdown_protection_8A898A76C3",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:58:54+00:00",
+      "direction": "drawdown_protection",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_drawdown_protection_8A898A76C3.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_manual_reduce_fee_churn_983789791E",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:58:41+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_reduce_fee_churn_983789791E.json"
+    },
+    {
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_drawdown_protection_630F15E6EB",
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "regime": "BULL_PULLBACK",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:56:33+00:00",
+      "direction": "drawdown_protection",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_drawdown_protection_630F15E6EB.json"
+    },
+    {
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_reduce_fee_churn_6965C7C784",
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "regime": "BULL_PULLBACK",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:56:28+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_reduce_fee_churn_6965C7C784.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_manual_drawdown_protection_C07B7AB587",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:56:15+00:00",
+      "direction": "drawdown_protection",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_drawdown_protection_C07B7AB587.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_manual_reduce_fee_churn_8AA0754413",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:56:01+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_reduce_fee_churn_8AA0754413.json"
+    },
+    {
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_drawdown_protection_690AC7F2AE",
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "regime": "BULL_PULLBACK",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:51:09+00:00",
+      "direction": "drawdown_protection",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_drawdown_protection_690AC7F2AE.json"
+    },
+    {
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_reduce_fee_churn_463A253248",
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "regime": "BULL_PULLBACK",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:51:04+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_reduce_fee_churn_463A253248.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_manual_drawdown_protection_9BF41CA98D",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:50:51+00:00",
+      "direction": "drawdown_protection",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_drawdown_protection_9BF41CA98D.json"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_manual_reduce_fee_churn_EE7F69B097",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "candidate_created_not_promoted",
+      "created_at": "2026-05-17T22:50:37+00:00",
+      "direction": "reduce_fee_churn",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_reduce_fee_churn_EE7F69B097.json"
+    }
+  ],
+  "latest_comparison": {
+    "schema_version": 1,
+    "candidate_flow_version": "0.4.53",
+    "run_id": "manual_candidate_compare_short_20260518_101236",
+    "generated_at": "2026-05-18T15:12:52+00:00",
+    "profile": "short",
+    "status": "completed",
+    "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_D7A7F7E84F",
+    "parent_champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+    "regime": "BEAR_TREND",
+    "same_test_windows": true,
+    "test_window_source": "2026-05-14T20:23:46+00:00",
+    "strategy_profile_diagnostic": {
+      "status": "ok",
+      "parent_effective_profile": {
+        "regime": "BEAR_TREND",
+        "family": "defensive_trend_stabilization",
+        "buy_fraction": 0.02,
+        "max_exposure": 0.11,
+        "profit_target_pct": 3.36,
+        "stop_loss_pct": 2.4,
+        "trailing_stop_pct": 3.2,
+        "min_bars_between_buys": 135,
+        "entry_enabled": true
+      },
+      "candidate_effective_profile": {
+        "regime": "BEAR_TREND",
+        "family": "defensive_trend_stabilization",
+        "buy_fraction": 0.008,
+        "max_exposure": 0.055,
+        "profit_target_pct": 3.7632,
+        "stop_loss_pct": 2.4,
+        "trailing_stop_pct": 3.2,
+        "min_bars_between_buys": 304,
+        "entry_enabled": true
+      },
+      "changed_profile_keys": {
+        "buy_fraction": {
+          "parent": 0.02,
+          "candidate": 0.008
+        },
+        "max_exposure": {
+          "parent": 0.11,
+          "candidate": 0.055
+        },
+        "min_bars_between_buys": {
+          "parent": 135,
+          "candidate": 304
+        },
+        "profit_target_pct": {
+          "parent": 3.36,
+          "candidate": 3.7632
+        }
+      },
+      "candidate_is_measurable_by_strategy_tester": true
+    },
+    "parent_result": {
+      "schema_version": 1,
+      "tester_version": "0.4.21",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "champion_fingerprint": "14328f4a37e642d7",
+      "regime": "BEAR_TREND",
+      "symbol": "XBTUSD",
+      "test_profile": "short",
+      "status": "completed",
+      "starting_equity": 10000.0,
+      "final_equity": 9494.816002,
+      "total_return_pct": -5.05184,
+      "apr_estimate": -10.88341,
+      "max_drawdown_pct": -5.10158,
+      "trade_count": 402,
+      "completed_round_trips": 126,
+      "fee_total": 274.631928,
+      "test_days": 164.212066,
+      "test_window_count": 5,
+      "score": -11.124753,
+      "health": "weak_negative",
+      "strategy_family": "defensive_trend_stabilization",
+      "cash_protection": false
+    },
+    "candidate_result": {
+      "schema_version": 1,
+      "tester_version": "0.4.21",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_D7A7F7E84F",
+      "champion_fingerprint": "8d724f41c940d1dc",
+      "regime": "BEAR_TREND",
+      "symbol": "XBTUSD",
+      "test_profile": "short",
+      "status": "completed",
+      "starting_equity": 10000.0,
+      "final_equity": 9923.255067,
+      "total_return_pct": -0.767449,
+      "apr_estimate": -1.697838,
+      "max_drawdown_pct": -0.897234,
+      "trade_count": 237,
+      "completed_round_trips": 99,
+      "fee_total": 57.068503,
+      "test_days": 164.212066,
+      "test_window_count": 5,
+      "score": 15.075001,
+      "health": "weak_negative",
+      "strategy_family": "defensive_trend_stabilization",
+      "cash_protection": false
+    },
+    "gate_decision": {
+      "decision": "WATCH",
+      "reasons": [
+        "Candidate improved APR without meaningful score or drawdown deterioration.",
+        "Short profile can only nominate. Run long/complete before applying."
+      ],
+      "deltas": {
+        "apr_delta": 9.185572,
+        "score_delta": 26.199754,
+        "drawdown_delta": 4.204346,
+        "trade_delta": -165,
+        "fee_delta": -217.563425
+      }
+    },
+    "active_champion_changed": false,
+    "run_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\manual_rebuild_candidate_flow\\runs\\manual_candidate_compare_short_20260518_101236",
+    "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_D7A7F7E84F.json"
+  }
+}

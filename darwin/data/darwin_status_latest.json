@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "darwin_version": "0.5.2",
+  "generated_at": "2026-05-18T04:45:12+00:00",
+  "status": "DARWIN_SHELL_READY",
+  "mode": "directed_engine_available_no_auto_apply",
+  "blockers": [],
+  "warnings": [],
+  "contract": {
+    "darwin_role": "orchestrator_dispatcher",
+    "darwin_does_not": [
+      "create candidates directly",
+      "mutate champion parameters directly",
+      "replace active champions directly",
+      "bypass testing labs",
+      "bypass promotion review or backup policy"
+    ],
+    "lifecycle": "engine/lab -> candidate -> testing labs -> ladder -> review -> shadow impact -> gate -> manual apply"
+  },
+  "engine_registry": {
+    "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\config\\darwin_engine_registry.json",
+    "engine_count": 9,
+    "installed_count": 1,
+    "planned_count": 8,
+    "first_installed_engine": "fee_churn_reducer_engine"
+  },
+  "testing_lab_registry": {
+    "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\config\\darwin_testing_lab_registry.json",
+    "lab_count": 7,
+    "found_count": 5
+  },
+  "cycle_config": {
+    "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\config\\darwin_cycle_config.json",
+    "execution_policy": "directed_engine_execution_allowed_no_auto_apply",
+    "auto_apply_allowed": false
+  },
+  "latest_reports": {
+    "effectiveness": {
+      "rel_path": "output/reports/candidate_effectiveness_tester/candidate_effectiveness_latest.json",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_effectiveness_tester\\candidate_effectiveness_latest.json",
+      "found": true
+    },
+    "retest_ladder": {
+      "rel_path": "output/reports/candidate_retest_ladder/candidate_retest_ladder_latest.json",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.json",
+      "found": true
+    },
+    "promotion_review": {
+      "rel_path": "output/reports/promotion_ready_candidate_review/promotion_ready_candidate_review_latest.json",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\promotion_ready_candidate_review\\promotion_ready_candidate_review_latest.json",
+      "found": true
+    },
+    "shadow_impact": {
+      "rel_path": "output/reports/shadow_champion_impact/shadow_champion_impact_latest.json",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\shadow_champion_impact\\shadow_champion_impact_latest.json",
+      "found": true
+    },
+    "evolution_readiness": {
+      "rel_path": "output/reports/evolution_readiness/evolution_readiness_latest.json",
+      "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\evolution_readiness\\evolution_readiness_latest.json",
+      "found": true
+    }
+  },
+  "worker_status": {
+    "worker_manager_status": "GLOBAL_IDLE",
+    "active_tasks": 0,
+    "queue_size": 0
+  },
+  "next": [
+    "Run or inspect the installed Fee Churn Reducer Engine from Darwin F.",
+    "Send engine WATCH/PROMISING candidates through retest ladder, review, and shadow impact.",
+    "Keep promotion manual until later safety policy changes."
+  ]
+}

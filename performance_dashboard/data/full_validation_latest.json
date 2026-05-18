@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "validator_version": "0.4.0",
+  "run_id": "full_chrono_validation_20260518_094537",
+  "created_at": "2026-05-18T14:45:43+00:00",
+  "status": "completed",
+  "symbol": "XBTUSD",
+  "starting_equity": 10000.0,
+  "final_equity": 9269.840797,
+  "total_return_pct": -7.301592,
+  "apr_estimate": -1.504124,
+  "max_drawdown_pct": -13.406053,
+  "trade_count": 2409,
+  "completed_round_trips": 752,
+  "fee_total": 3545.55655,
+  "days": 1825.996528,
+  "baseline_buy_hold": {
+    "status": "completed",
+    "final_equity": 30001.685754,
+    "total_return_pct": 200.016858,
+    "apr_estimate": 24.559556
+  },
+  "cash_baseline": {
+    "final_equity": 10000.0,
+    "total_return_pct": 0,
+    "apr_estimate": 0
+  },
+  "policy": "chronological_shared_portfolio_champion_handoff_no_forced_exit_except_crash",
+  "run_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\full_validation\\full_chrono_validation_20260518_094537"
+}

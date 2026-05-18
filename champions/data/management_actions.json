@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "version": "0.4.39",
+  "generated_at": "2026-05-17T15:40:07+00:00",
+  "local_source_of_truth": true,
+  "request_files": {
+    "restore_by_public_id": "config/champion_restore_request.json",
+    "compare_by_public_id": "config/champion_compare_request.json",
+    "safer_preset_load": "config/champion_menu_load_request.json"
+  },
+  "sections": [
+    "ACTIVE",
+    "CHALLENGER",
+    "RETIRED",
+    "REJECTED",
+    "HISTORICAL"
+  ],
+  "note": "GitHub is view-only. Use copied public IDs in local PMV3 request files for restore/compare/load actions."
+}

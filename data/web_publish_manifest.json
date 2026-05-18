@@ -1,0 +1,726 @@
+{
+  "schema_version": 1,
+  "publisher_version": "0.5.1",
+  "published_at": "2026-05-18T17:47:07+00:00",
+  "reason": "dashboard_initial_push",
+  "note": "GitHub copy may downsample oversized JSON. Full-resolution files remain local in PMV3 output folders. All helper pages are linked from index.html and receive HOME buttons. Regime Review publishes latest_regime_review.html as regime_review/index.html for GitHub Pages. v0.4.13 pushes from a fresh temp Git repo to avoid old large blobs. v0.4.15 adds a Regime Review index.html for GitHub Pages.",
+  "files": [
+    {
+      "file": "champions/index.html",
+      "mode": "champion_library_rebuilt_before_publish",
+      "message": "Champion Library built: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\index.html | data=C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\data\\champion_library.json | csv=C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\data\\champion_library.csv | champions=94"
+    },
+    {
+      "file": "candles_buy_sell_by_champion/index.html",
+      "mode": "candles_review_rebuilt_before_publish",
+      "message": "Candles Buy/Sell by Champion page built. Status=READY, months=60, candles=524895, trades=2484. Output: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\candles_buy_sell_by_champion\\index.html"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/index.html",
+      "source_bytes": 12413,
+      "published_bytes": 12413,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/champion_curves.json",
+      "source_bytes": 8824938,
+      "published_bytes": 8824938,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/full_validation_equity_curve.json",
+      "source_bytes": 1933165,
+      "published_bytes": 1933165,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/full_validation_equity_curve_web.json",
+      "source_bytes": 1933165,
+      "published_bytes": 1933165,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/full_validation_latest.json",
+      "source_bytes": 994,
+      "published_bytes": 994,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/full_validation_regime_segments.json",
+      "source_bytes": 18462,
+      "published_bytes": 18462,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/full_validation_trades.json",
+      "source_bytes": 975263,
+      "published_bytes": 975263,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/report_meta.json",
+      "source_bytes": 2190,
+      "published_bytes": 2190,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/performance_dashboard/data/strategy_test_results.json",
+      "source_bytes": 7295,
+      "published_bytes": 7295,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/regime_review/latest_regime_review.html",
+      "source_bytes": 295528,
+      "published_bytes": 295528,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/regime_review/PMV3_regime_review_20260512_234833.html",
+      "source_bytes": 295528,
+      "published_bytes": 295528,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/regime_review/PMV3_regime_review_20260514_013922.html",
+      "source_bytes": 295528,
+      "published_bytes": 295528,
+      "mode": "copied"
+    },
+    {
+      "file": "regime_review/index.html",
+      "source": "regime_review/latest_regime_review.html",
+      "source_bytes": 295528,
+      "published_bytes": 295528,
+      "mode": "regime_review_index_from_latest"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/champions/index.html",
+      "source_bytes": 1344962,
+      "published_bytes": 1344962,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/champions/data/champion_library.csv",
+      "source_bytes": 14937,
+      "published_bytes": 14937,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/champions/data/champion_library.json",
+      "source_bytes": 1729212,
+      "published_bytes": 1729212,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/champions/data/management_actions.json",
+      "source_bytes": 593,
+      "published_bytes": 593,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/manual_champion_rebuild_workbench/index.html",
+      "source_bytes": 373531,
+      "published_bytes": 373531,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/manual_champion_rebuild_workbench/data/manual_champion_rebuild_workbench.json",
+      "source_bytes": 469373,
+      "published_bytes": 469373,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/index.html",
+      "source_bytes": 53589,
+      "published_bytes": 53589,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/OPEN_LOCAL_PREVIEW_SERVER.bat",
+      "source_bytes": 492,
+      "published_bytes": 492,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/champions.json",
+      "source_bytes": 21839,
+      "published_bytes": 21839,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/manifest.json",
+      "source_bytes": 18575,
+      "published_bytes": 18575,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/regimes.json",
+      "source_bytes": 58608,
+      "published_bytes": 58608,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/trades.json",
+      "source_bytes": 975145,
+      "published_bytes": 975145,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-01.json",
+      "source_bytes": 1182883,
+      "published_bytes": 1182883,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-02.json",
+      "source_bytes": 1076575,
+      "published_bytes": 1076575,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-03.json",
+      "source_bytes": 1188874,
+      "published_bytes": 1188874,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-04.json",
+      "source_bytes": 1152073,
+      "published_bytes": 1152073,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-05.json",
+      "source_bytes": 1191291,
+      "published_bytes": 1191291,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-06.json",
+      "source_bytes": 1148792,
+      "published_bytes": 1148792,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-07.json",
+      "source_bytes": 1178182,
+      "published_bytes": 1178182,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-08.json",
+      "source_bytes": 1189286,
+      "published_bytes": 1189286,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-09.json",
+      "source_bytes": 1148843,
+      "published_bytes": 1148843,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-10.json",
+      "source_bytes": 1188615,
+      "published_bytes": 1188615,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-11.json",
+      "source_bytes": 1150752,
+      "published_bytes": 1150752,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2021-12.json",
+      "source_bytes": 1188279,
+      "published_bytes": 1188279,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-01.json",
+      "source_bytes": 1188288,
+      "published_bytes": 1188288,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-02.json",
+      "source_bytes": 1073648,
+      "published_bytes": 1073648,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-03.json",
+      "source_bytes": 1186240,
+      "published_bytes": 1186240,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-04.json",
+      "source_bytes": 1149608,
+      "published_bytes": 1149608,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-05.json",
+      "source_bytes": 1186901,
+      "published_bytes": 1186901,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-06.json",
+      "source_bytes": 1150619,
+      "published_bytes": 1150619,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-07.json",
+      "source_bytes": 1186196,
+      "published_bytes": 1186196,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-08.json",
+      "source_bytes": 1185814,
+      "published_bytes": 1185814,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-09.json",
+      "source_bytes": 1147619,
+      "published_bytes": 1147619,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-10.json",
+      "source_bytes": 1187477,
+      "published_bytes": 1187477,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-11.json",
+      "source_bytes": 1150084,
+      "published_bytes": 1150084,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2022-12.json",
+      "source_bytes": 1184861,
+      "published_bytes": 1184861,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-01.json",
+      "source_bytes": 1188810,
+      "published_bytes": 1188810,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-02.json",
+      "source_bytes": 1072047,
+      "published_bytes": 1072047,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-03.json",
+      "source_bytes": 1190976,
+      "published_bytes": 1190976,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-04.json",
+      "source_bytes": 1150935,
+      "published_bytes": 1150935,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-05.json",
+      "source_bytes": 1186933,
+      "published_bytes": 1186933,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-06.json",
+      "source_bytes": 1149617,
+      "published_bytes": 1149617,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-07.json",
+      "source_bytes": 1187088,
+      "published_bytes": 1187088,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-08.json",
+      "source_bytes": 1185841,
+      "published_bytes": 1185841,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-09.json",
+      "source_bytes": 1148814,
+      "published_bytes": 1148814,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-10.json",
+      "source_bytes": 1188311,
+      "published_bytes": 1188311,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-11.json",
+      "source_bytes": 1150291,
+      "published_bytes": 1150291,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2023-12.json",
+      "source_bytes": 1188761,
+      "published_bytes": 1188761,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-01.json",
+      "source_bytes": 1174540,
+      "published_bytes": 1174540,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-02.json",
+      "source_bytes": 1112290,
+      "published_bytes": 1112290,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-03.json",
+      "source_bytes": 1189167,
+      "published_bytes": 1189167,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-04.json",
+      "source_bytes": 1139072,
+      "published_bytes": 1139072,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-05.json",
+      "source_bytes": 1187270,
+      "published_bytes": 1187270,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-06.json",
+      "source_bytes": 1148932,
+      "published_bytes": 1148932,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-07.json",
+      "source_bytes": 1187477,
+      "published_bytes": 1187477,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-08.json",
+      "source_bytes": 1188057,
+      "published_bytes": 1188057,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-09.json",
+      "source_bytes": 1146855,
+      "published_bytes": 1146855,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-10.json",
+      "source_bytes": 1187640,
+      "published_bytes": 1187640,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-11.json",
+      "source_bytes": 1150748,
+      "published_bytes": 1150748,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2024-12.json",
+      "source_bytes": 1198968,
+      "published_bytes": 1198968,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-01.json",
+      "source_bytes": 1199258,
+      "published_bytes": 1199258,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-02.json",
+      "source_bytes": 1074447,
+      "published_bytes": 1074447,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-03.json",
+      "source_bytes": 1188019,
+      "published_bytes": 1188019,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-04.json",
+      "source_bytes": 1149785,
+      "published_bytes": 1149785,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-05.json",
+      "source_bytes": 1214627,
+      "published_bytes": 1214627,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-06.json",
+      "source_bytes": 1183315,
+      "published_bytes": 1183315,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-07.json",
+      "source_bytes": 1223181,
+      "published_bytes": 1223181,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-08.json",
+      "source_bytes": 1218837,
+      "published_bytes": 1218837,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-09.json",
+      "source_bytes": 1183884,
+      "published_bytes": 1183884,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-10.json",
+      "source_bytes": 1223688,
+      "published_bytes": 1223688,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-11.json",
+      "source_bytes": 1151226,
+      "published_bytes": 1151226,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candles_buy_sell_by_champion/data/candles/2025-12.json",
+      "source_bytes": 1188037,
+      "published_bytes": 1188037,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/manual_rebuild_candidate_flow/index.html",
+      "source_bytes": 12465,
+      "published_bytes": 12465,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/manual_rebuild_candidate_flow/data/manual_rebuild_candidate_flow.json",
+      "source_bytes": 49705,
+      "published_bytes": 49705,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candidate_effectiveness_tester/index.html",
+      "source_bytes": 2629,
+      "published_bytes": 2629,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candidate_effectiveness_tester/data/candidate_effectiveness_latest.json",
+      "source_bytes": 9149,
+      "published_bytes": 9149,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candidate_retest_ladder/index.html",
+      "source_bytes": 7034,
+      "published_bytes": 7034,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/candidate_retest_ladder/data/candidate_retest_ladder_latest.json",
+      "source_bytes": 25616,
+      "published_bytes": 25616,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/promotion_ready_candidate_review/index.html",
+      "source_bytes": 4409,
+      "published_bytes": 4409,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/promotion_ready_candidate_review/data/promotion_ready_candidate_review_latest.json",
+      "source_bytes": 11131,
+      "published_bytes": 11131,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/shadow_champion_impact/index.html",
+      "source_bytes": 3809,
+      "published_bytes": 3809,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/shadow_champion_impact/data/shadow_champion_impact_latest.json",
+      "source_bytes": 117644,
+      "published_bytes": 117644,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/evolution_readiness/index.html",
+      "source_bytes": 4187,
+      "published_bytes": 4187,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/index.html",
+      "source_bytes": 5647,
+      "published_bytes": 5647,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/auto_promotion/index.html",
+      "source_bytes": 1406,
+      "published_bytes": 1406,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/completion_finalizer/index.html",
+      "source_bytes": 3699,
+      "published_bytes": 3699,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/data/darwin_status_latest.json",
+      "source_bytes": 3344,
+      "published_bytes": 3344,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/fee_churn_reducer/index.html",
+      "source_bytes": 4280,
+      "published_bytes": 4280,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/health/index.html",
+      "source_bytes": 5011,
+      "published_bytes": 5011,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/promotion_listener/index.html",
+      "source_bytes": 1684,
+      "published_bytes": 1684,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/run_contract/index.html",
+      "source_bytes": 2734,
+      "published_bytes": 2734,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/promotion_listener/data/promotion_listener_latest.json",
+      "source_bytes": 24555,
+      "published_bytes": 24555,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/health/data/darwin_health_latest.json",
+      "source_bytes": 3245,
+      "published_bytes": 3245,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/fee_churn_reducer/data/fee_churn_reducer_latest.json",
+      "source_bytes": 13858,
+      "published_bytes": 13858,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/completion_finalizer/data/completion_finalizer_latest.json",
+      "source_bytes": 2109,
+      "published_bytes": 2109,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/darwin/auto_promotion/data/auto_promotion_latest.json",
+      "source_bytes": 4820,
+      "published_bytes": 4820,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/champion_same_regime_comparison/index.html",
+      "source_bytes": 18933,
+      "published_bytes": 18933,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/task_verification/index.html",
+      "source_bytes": 7630,
+      "published_bytes": 7630,
+      "mode": "copied"
+    },
+    {
+      "file": "C:/Users/marcg/Documents/kraken-bot/profit-monkey-v3-web/task_verification/data/task_verification.json",
+      "source_bytes": 20700,
+      "published_bytes": 20700,
+      "mode": "copied"
+    },
+    {
+      "file": "index.html",
+      "mode": "web_cleanup_home_index",
+      "helper_count": 14
+    },
+    {
+      "file": "data/web_helper_index.json",
+      "mode": "web_cleanup_helper_index",
+      "helper_count": 14
+    },
+    {
+      "file": "performance_dashboard/data/full_validation_equity_curve.json",
+      "source_bytes": 1933165,
+      "published_bytes": 1933165,
+      "mode": "equity_curve_under_cap_kept"
+    },
+    {
+      "file": "performance_dashboard/data/full_validation_equity_curve.json",
+      "source_bytes": 1933165,
+      "published_bytes": 1933165,
+      "mode": "equity_curve_under_cap_kept"
+    },
+    {
+      "file": "performance_dashboard/data/full_validation_equity_curve.json",
+      "source_bytes": 1933165,
+      "published_bytes": 1933165,
+      "mode": "equity_curve_under_cap_kept"
+    },
+    {
+      "file": "performance_dashboard/data/full_validation_equity_curve.json",
+      "source_bytes": 1933165,
+      "published_bytes": 1933165,
+      "mode": "equity_curve_under_cap_kept"
+    }
+  ]
+}

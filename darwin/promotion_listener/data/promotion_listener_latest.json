@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "pipeline_version": "0.5.5",
+  "run_id": "darwin_promotion_listener_20260518_003122",
+  "generated_at": "2026-05-18T05:38:12+00:00",
+  "status": "COMPLETED",
+  "source_engine_id": "fee_churn_reducer_engine",
+  "source_engine_run_id": "darwin_fee_churn_short_20260518_003008",
+  "source_engine_report_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\fee_churn_reducer\\fee_churn_reducer_latest.json",
+  "policy": {
+    "darwin_promotion_listener_allowed": true,
+    "required_gates": [
+      "short",
+      "long",
+      "complete",
+      "shadow_full_set_positive",
+      "promotion_gate_promote",
+      "backup_success",
+      "champion_pool_history_save_success"
+    ],
+    "manual_approval_required": false,
+    "one_winner_per_parent_per_run": true
+  },
+  "stages": [
+    {
+      "stage": "retest_ladder",
+      "cmd": [
+        "C:\\Users\\marcg\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/pmv3_candidate_retest_ladder.py",
+        "--root",
+        "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3",
+        "--source",
+        "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\fee_churn_reducer\\fee_churn_reducer_latest.json",
+        "--profiles",
+        "long,complete",
+        "--max-candidates",
+        "6",
+        "--min-score",
+        "5.0",
+        "--no-prompt"
+      ],
+      "started_at": "2026-05-18T05:31:22+00:00",
+      "completed_at": "2026-05-18T05:36:53+00:00",
+      "returncode": 0,
+      "stdout_tail": "Selected 6 candidate(s). Profiles: long, complete\nNothing will be applied to active champions.\n\n[1/6] Candidate=PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC Regime=BEAR_TREND Direction=\n    Retesting LONG...\n        -> PROMISING / PROMOTION_CANDIDATE | score=2696.716441 | APRDelta=14.824129 DDDelta=14.195366 tradeDelta=-408 feeDelta=-1370.281213\n    Retesting COMPLETE...\n        -> PROMISING / PROMOTION_CANDIDATE | score=3213.829028 | APRDelta=14.949452 DDDelta=20.652935 tradeDelta=-630 feeDelta=-1912.789668\n    Overall: PROMOTION_READY_REVIEW\n[2/6] Candidate=PMV3_BEAR_TREND_fee_churn_balanced_1396AB3BF6 Regime=BEAR_TREND Direction=\n    Retesting LONG...\n        -> PROMISING / PROMOTION_CANDIDATE | score=2623.784542 | APRDelta=14.604858 DDDelta=13.499703 tradeDelta=-294 feeDelta=-1033.183143\n    Retesting COMPLETE...\n        -> PROMISING / PROMOTION_CANDIDATE | score=2935.0335 | APRDelta=13.75459 DDDelta=18.849986 tradeDelta=-443 feeDelta=-1422.284791\n    Overall: PROMOTION_READY_REVIEW\n[3/6] Candidate=PMV3_BEAR_TREND_fee_churn_conservative_7B47DB4696 Regime=BEAR_TREND Direction=\n    Retesting LONG...\n        -> PROMISING / PROMOTION_CANDIDATE | score=1928.004947 | APRDelta=10.744985 DDDelta=10.0588 tradeDelta=-161 feeDelta=-572.037932\n    Retesting COMPLETE...\n        -> PROMISING / PROMOTION_CANDIDATE | score=1732.714923 | APRDelta=8.068115 DDDelta=11.518859 tradeDelta=-247 feeDelta=-777.307364\n    Overall: PROMOTION_READY_REVIEW\n[4/6] Candidate=PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0 Regime=SIDEWAYS_BULL_RANGE Direction=\n    Retesting LONG...\n        -> PROMISING / PROMOTION_CANDIDATE | score=1735.175773 | APRDelta=8.720458 DDDelta=10.482539 tradeDelta=-51 feeDelta=-754.497355\n    Retesting COMPLETE...\n        -> PROMISING / PROMOTION_CANDIDATE | score=1911.165116 | APRDelta=8.004271 DDDelta=13.376534 tradeDelta=-73 feeDelta=-1036.983111\n    Overall: PROMOTION_READY_REVIEW\n[5/6] Candidate=PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_4068A05FBE Regime=SIDEWAYS_BULL_RANGE Direction=\n    Retesting LONG...\n        -> PROMISING / PROMOTION_CANDIDATE | score=971.599784 | APRDelta=4.999693 DDDelta=5.564616 tradeDelta=-19 feeDelta=-329.508678\n    Retesting COMPLETE...\n        -> PROMISING / PROMOTION_CANDIDATE | score=827.885106 | APRDelta=3.543148 DDDelta=5.56072 tradeDelta=-23 feeDelta=-452.372511\n    Overall: PROMOTION_READY_REVIEW\n[6/6] Candidate=PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_6BC70433EB Regime=SIDEWAYS_BULL_RANGE Direction=\n    Retesting LONG...\n        -> PROMISING / PROMOTION_CANDIDATE | score=1386.843073 | APRDelta=6.994243 DDDelta=8.327699 tradeDelta=-38 feeDelta=-576.749359\n    Retesting COMPLETE...\n        -> PROMISING / PROMOTION_CANDIDATE | score=1467.367359 | APRDelta=6.176633 DDDelta=10.212966 tradeDelta=-51 feeDelta=-787.557386\n    Overall: PROMOTION_READY_REVIEW\n\nDONE. No candidates were applied.\nText report: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.txt\nCSV report:  C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.csv\nJSON report: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.json\nWeb report:  C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\candidate_retest_ladder\\index.html\n",
+      "stderr_tail": "",
+      "ok": true
+    },
+    {
+      "stage": "promotion_ready_review",
+      "cmd": [
+        "C:\\Users\\marcg\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/pmv3_promotion_ready_candidate_review.py",
+        "--root",
+        "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3",
+        "--no-prompt"
+      ],
+      "started_at": "2026-05-18T05:36:53+00:00",
+      "completed_at": "2026-05-18T05:36:53+00:00",
+      "returncode": 0,
+      "stdout_tail": "============================================================\nPMV3 Promotion-Ready Candidate Review v0.4.56\n============================================================\nReviews ladder-confirmed candidates and can apply ONE manually\nonly after exact confirmations and backup creation.\n\nSource ladder report: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.json\nSource ladder run:    candidate_retest_ladder_20260518_003122\nPromotion-ready:      6\n\nPromotion-ready candidates ranked:\n------------------------------------------------------------------------\n1) BEAR_TREND | \n   Candidate: PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC\n   Parent:    PMV3_BEAR_TREND_starter_002\n   Scores:    short=0.0 long=2696.716441 complete=3213.829028\n   APR:       -21.625445 -> -6.675993  delta=14.949452\n   DD:        -30.358111 -> -9.705176  delta=20.652935\n   Fees delta:-1912.789668 | Trades delta: -630.0\n   Apply allowed by review: True\n------------------------------------------------------------------------\n2) BEAR_TREND | \n   Candidate: PMV3_BEAR_TREND_fee_churn_balanced_1396AB3BF6\n   Parent:    PMV3_BEAR_TREND_starter_002\n   Scores:    short=0.0 long=2623.784542 complete=2935.0335\n   APR:       -21.625445 -> -7.870855  delta=13.75459\n   DD:        -30.358111 -> -11.508125  delta=18.849986\n   Fees delta:-1422.284791 | Trades delta: -443.0\n   Apply allowed by review: True\n------------------------------------------------------------------------\n3) SIDEWAYS_BULL_RANGE | \n   Candidate: PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0\n   Parent:    PMV3_SIDEWAYS_BULL_RANGE_starter_008\n   Scores:    short=0.0 long=1735.175773 complete=1911.165116\n   APR:       -12.193616 -> -4.189345  delta=8.004271\n   DD:        -20.407504 -> -7.03097  delta=13.376534\n   Fees delta:-1036.983111 | Trades delta: -73.0\n   Apply allowed by review: True\n------------------------------------------------------------------------\n4) BEAR_TREND | \n   Candidate: PMV3_BEAR_TREND_fee_churn_conservative_7B47DB4696\n   Parent:    PMV3_BEAR_TREND_starter_002\n   Scores:    short=0.0 long=1928.004947 complete=1732.714923\n   APR:       -21.625445 -> -13.55733  delta=8.068115\n   DD:        -30.358111 -> -18.839252  delta=11.518859\n   Fees delta:-777.307364 | Trades delta: -247.0\n   Apply allowed by review: True\n------------------------------------------------------------------------\n5) SIDEWAYS_BULL_RANGE | \n   Candidate: PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_6BC70433EB\n   Parent:    PMV3_SIDEWAYS_BULL_RANGE_starter_008\n   Scores:    short=0.0 long=1386.843073 complete=1467.367359\n   APR:       -12.193616 -> -6.016983  delta=6.176633\n   DD:        -20.407504 -> -10.194538  delta=10.212966\n   Fees delta:-787.557386 | Trades delta: -51.0\n   Apply allowed by review: True\n------------------------------------------------------------------------\n6) SIDEWAYS_BULL_RANGE | \n   Candidate: PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_4068A05FBE\n   Parent:    PMV3_SIDEWAYS_BULL_RANGE_starter_008\n   Scores:    short=0.0 long=971.599784 complete=827.885106\n   APR:       -12.193616 -> -8.650468  delta=3.543148\n   DD:        -20.407504 -> -14.846784  delta=5.56072\n   Fees delta:-452.372511 | Trades delta: -23.0\n   Apply allowed by review: True\n\nReports written:\n- C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\promotion_ready_candidate_review\\promotion_ready_candidate_review_latest.txt\n- C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\promotion_ready_candidate_review\\promotion_ready_candidate_review_latest.json\n- C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\promotion_ready_candidate_review\\index.html\n\nNo candidate applied.\n",
+      "stderr_tail": "",
+      "ok": true
+    },
+    {
+      "stage": "shadow_impact",
+      "cmd": [
+        "C:\\Users\\marcg\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/pmv3_shadow_champion_impact_test.py",
+        "--root",
+        "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3",
+        "--max-candidates",
+        "6"
+      ],
+      "started_at": "2026-05-18T05:36:53+00:00",
+      "completed_at": "2026-05-18T05:38:12+00:00",
+      "returncode": 0,
+      "stdout_tail": "============================================================\nPMV3 Shadow Champion Impact Test v0.4.57\n============================================================\nThis previews promotion-ready candidates inside the full active champion set.\nSafety: applies nothing and does not write active_champions.json.\n\nSource ladder: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.json\nPromotion-ready candidates selected: 6\nRunning baseline full-set validation...\n[1/6] Shadow testing PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC over parent PMV3_BEAR_TREND_starter_002...\n  -> FULL_SET_PROMOTION_REVIEW | impact=364.794956 | APRDelta=1.699497 DDDelta=6.928841 feeDelta=-549.827389 tradeDelta=-626\n[2/6] Shadow testing PMV3_BEAR_TREND_fee_churn_balanced_1396AB3BF6 over parent PMV3_BEAR_TREND_starter_002...\n  -> FULL_SET_PROMOTION_REVIEW | impact=343.922033 | APRDelta=1.506287 DDDelta=6.117668 feeDelta=-399.884847 tradeDelta=-440\n[3/6] Shadow testing PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0 over parent PMV3_SIDEWAYS_BULL_RANGE_starter_008...\n  -> FULL_SET_PROMOTION_REVIEW | impact=425.947027 | APRDelta=1.89551 DDDelta=5.367685 feeDelta=-616.68015 tradeDelta=-72\n[4/6] Shadow testing PMV3_BEAR_TREND_fee_churn_conservative_7B47DB4696 over parent PMV3_BEAR_TREND_starter_002...\n  -> FULL_SET_PROMOTION_REVIEW | impact=216.670364 | APRDelta=0.940784 DDDelta=3.766862 feeDelta=-218.878277 tradeDelta=-251\n[5/6] Shadow testing PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_6BC70433EB over parent PMV3_SIDEWAYS_BULL_RANGE_starter_008...\n  -> FULL_SET_PROMOTION_REVIEW | impact=352.420491 | APRDelta=1.513966 DDDelta=4.52357 feeDelta=-470.882738 tradeDelta=-48\n[6/6] Shadow testing PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_4068A05FBE over parent PMV3_SIDEWAYS_BULL_RANGE_starter_008...\n  -> FULL_SET_PROMOTION_REVIEW | impact=224.19068 | APRDelta=0.852796 DDDelta=3.090333 feeDelta=-283.073008 tradeDelta=-22\n\nShadow impact test complete.\nReport: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\shadow_champion_impact\\shadow_champion_impact_latest.txt\nWeb:    C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\shadow_champion_impact\\index.html\n",
+      "stderr_tail": "",
+      "ok": true
+    }
+  ],
+  "apply_results": [
+    {
+      "schema_version": 1,
+      "pipeline_version": "0.5.5",
+      "applied_at": "2026-05-18T05:38:12+00:00",
+      "status": "AUTO_APPLIED",
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "backup_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\backups\\darwin_promotion_listener\\20260518_003812_before_listener_apply_PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "archive_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\darwin_promotion_archive\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0\\promotion_listener_record.json",
+      "review_apply_result": {
+        "status": "applied",
+        "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+        "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+        "backup_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\backups\\champions\\champions_20260518_003812_before_promotion_ready_apply_PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+        "active_file": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\active_champions.json",
+        "applied_record_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\applied_history\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0_applied_20260518_003812.json"
+      },
+      "helper_refresh": {
+        "attempted": true,
+        "ok": true,
+        "messages": [
+          "Champion Library built: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\index.html | data=C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\data\\champion_library.json | csv=C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\data\\champion_library.csv | champions=45"
+        ]
+      },
+      "shadow_impact_result": {
+        "active_champions_changed": false,
+        "apr_delta": 1.89551,
+        "baseline_apr": -5.133949,
+        "baseline_dd": -26.394529,
+        "baseline_fees": 4768.436863,
+        "baseline_trades": 3107,
+        "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+        "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0.json",
+        "candidates_applied": false,
+        "direction": "reduce_fee_churn",
+        "drawdown_delta": 5.367685,
+        "fee_delta": -616.68015,
+        "final_equity_delta": 799.244838,
+        "impact_score": 425.947027,
+        "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+        "promotion_gate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\promotion_gate_packets\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0_ladder_gate_packet_20260518_003513.json",
+        "rank": 1,
+        "recommendation": "FULL_SET_PROMOTION_REVIEW",
+        "regime": "SIDEWAYS_BULL_RANGE",
+        "return_delta_pct": 7.992449,
+        "round_trip_delta": -20,
+        "shadow_apr": -3.238439,
+        "shadow_dd": -21.026844,
+        "shadow_fees": 4151.756713,
+        "shadow_run_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\shadow_champion_impact\\validation_runs\\shadow_champion_impact_20260518_003653_shadow_PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+        "shadow_trades": 3035,
+        "trade_delta": -72
+      },
+      "selected_review_row": {
+        "rank_score": 2778.753002,
+        "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+        "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+        "regime": "SIDEWAYS_BULL_RANGE",
+        "direction": "",
+        "overall_verdict": "PROMOTION_READY_REVIEW",
+        "short_score": 0.0,
+        "long_score": 1735.175773,
+        "complete_score": 1911.165116,
+        "long_verdict": "PROMISING",
+        "complete_verdict": "PROMISING",
+        "complete_gate_decision": "PROMOTION_CANDIDATE",
+        "complete_apr_delta": 8.004271,
+        "complete_drawdown_delta": 13.376534,
+        "complete_fee_delta": -1036.983111,
+        "complete_trade_delta": -73.0,
+        "parent_complete_apr": -12.193616,
+        "candidate_complete_apr": -4.189345,
+        "parent_complete_dd": -20.407504,
+        "candidate_complete_dd": -7.03097,
+        "parent_complete_fees": 1609.15546,
+        "candidate_complete_fees": 572.172349,
+        "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0.json",
+        "promotion_gate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\promotion_gate_packets\\PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0_ladder_gate_packet_20260518_003513.json",
+        "candidate_loaded": true,
+        "apply_allowed_by_review": true,
+        "rank": 3
+      },
+      "source": {
+        "engine_id": "fee_churn_reducer_engine",
+        "run_id": "darwin_fee_churn_short_20260518_003008",
+        "pipeline_run_id": "darwin_promotion_listener_20260518_003122"
+      }
+    },
+    {
+      "schema_version": 1,
+      "pipeline_version": "0.5.5",
+      "applied_at": "2026-05-18T05:38:12+00:00",
+      "status": "AUTO_APPLIED",
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "backup_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\backups\\darwin_promotion_listener\\20260518_003812_before_listener_apply_PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "archive_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\darwin_promotion_archive\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC\\promotion_listener_record.json",
+      "review_apply_result": {
+        "status": "applied",
+        "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+        "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+        "backup_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\backups\\champions\\champions_20260518_003812_before_promotion_ready_apply_PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+        "active_file": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\active_champions.json",
+        "applied_record_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\applied_history\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC_applied_20260518_003812.json"
+      },
+      "helper_refresh": {
+        "attempted": true,
+        "ok": true,
+        "messages": [
+          "Champion Library built: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\index.html | data=C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\data\\champion_library.json | csv=C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\champions\\data\\champion_library.csv | champions=46"
+        ]
+      },
+      "shadow_impact_result": {
+        "active_champions_changed": false,
+        "apr_delta": 1.699497,
+        "baseline_apr": -5.133949,
+        "baseline_dd": -26.394529,
+        "baseline_fees": 4768.436863,
+        "baseline_trades": 3107,
+        "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+        "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC.json",
+        "candidates_applied": false,
+        "direction": "reduce_fee_churn",
+        "drawdown_delta": 6.928841,
+        "fee_delta": -549.827389,
+        "final_equity_delta": 713.638947,
+        "impact_score": 364.794956,
+        "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+        "promotion_gate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\promotion_gate_packets\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC_ladder_gate_packet_20260518_003222.json",
+        "rank": 2,
+        "recommendation": "FULL_SET_PROMOTION_REVIEW",
+        "regime": "BEAR_TREND",
+        "return_delta_pct": 7.13639,
+        "round_trip_delta": -74,
+        "shadow_apr": -3.434452,
+        "shadow_dd": -19.465688,
+        "shadow_fees": 4218.609474,
+        "shadow_run_dir": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\shadow_champion_impact\\validation_runs\\shadow_champion_impact_20260518_003653_shadow_PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+        "shadow_trades": 2481,
+        "trade_delta": -626
+      },
+      "selected_review_row": {
+        "rank_score": 4562.187249,
+        "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+        "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+        "regime": "BEAR_TREND",
+        "direction": "",
+        "overall_verdict": "PROMOTION_READY_REVIEW",
+        "short_score": 0.0,
+        "long_score": 2696.716441,
+        "complete_score": 3213.829028,
+        "long_verdict": "PROMISING",
+        "complete_verdict": "PROMISING",
+        "complete_gate_decision": "PROMOTION_CANDIDATE",
+        "complete_apr_delta": 14.949452,
+        "complete_drawdown_delta": 20.652935,
+        "complete_fee_delta": -1912.789668,
+        "complete_trade_delta": -630.0,
+        "parent_complete_apr": -21.625445,
+        "candidate_complete_apr": -6.675993,
+        "parent_complete_dd": -30.358111,
+        "candidate_complete_dd": -9.705176,
+        "parent_complete_fees": 2699.969694,
+        "candidate_complete_fees": 787.180026,
+        "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC.json",
+        "promotion_gate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\promotion_gate_packets\\PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC_ladder_gate_packet_20260518_003222.json",
+        "candidate_loaded": true,
+        "apply_allowed_by_review": true,
+        "rank": 1
+      },
+      "source": {
+        "engine_id": "fee_churn_reducer_engine",
+        "run_id": "darwin_fee_churn_short_20260518_003008",
+        "pipeline_run_id": "darwin_promotion_listener_20260518_003122"
+      }
+    }
+  ],
+  "errors": [],
+  "selected_candidates": [
+    {
+      "candidate_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "parent_champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "impact_score": 425.947027,
+      "recommendation": "FULL_SET_PROMOTION_REVIEW"
+    },
+    {
+      "candidate_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "impact_score": 364.794956,
+      "recommendation": "FULL_SET_PROMOTION_REVIEW"
+    }
+  ],
+  "summary": {
+    "source_engine_candidates": 6,
+    "selected_for_listener_apply": 2,
+    "applied": 2,
+    "auto_applied": 2,
+    "queued_for_rescue": 0,
+    "ready_queue_count": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset='utf-8'><title>PMV3 Fee Churn Reducer</title>
+<style>body{font-family:Arial,sans-serif;background:#0b1020;color:#eaf2ff;margin:0;padding:24px}a.home{position:fixed;right:20px;top:16px;background:#2563eb;color:white;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:bold}.card{background:#111a33;border:1px solid #2a3b70;border-radius:16px;padding:18px;margin:16px 0}table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #26365f;padding:8px;text-align:left;vertical-align:top}th{color:#93c5fd}.good{color:#86efac}.warn{color:#facc15}.bad{color:#fecaca}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.stat{background:#0f172a;border:1px solid #334155;border-radius:12px;padding:14px}.num{font-size:28px;font-weight:bold;color:#facc15}</style><style>.pmv3-home{display:inline-block;position:relative;z-index:9999;margin:10px 0 14px 0;background:#122033;color:#7dd3fc;border:1px solid #263244;border-radius:999px;padding:8px 12px;text-decoration:none;font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-weight:800}.pmv3-home:hover{filter:brightness(1.15)}</style></head><body><a class="pmv3-home" href="../../index.html">HOME</a>
+<a class='home' href='../../index.html'>HOME</a><h1>DARWIN Fee Churn Reducer Engine</h1><p>Version 0.5.7 | Run darwin_fee_churn_short_20260518_003008 | Generated 2026-05-18T05:31:22+00:00</p>
+<div class='grid'><div class='stat'><div>Tested</div><div class='num'>6</div></div><div class='stat'><div>Promising</div><div class='num good'>0</div></div><div class='stat'><div>Watch</div><div class='num warn'>6</div></div><div class='stat'><div>Bad</div><div class='num bad'>0</div></div><div class='stat'><div>Errors</div><div class='num bad'>0</div></div></div>
+<div class='card'><h2>Contract</h2><p>This engine creates separate fee-churn reduction candidates, short-tests them, then hands qualifying results to Darwin Promotion Listener. Darwin, not the engine, owns ladder, shadow, promotion gate, backup, archive, history, and apply.</p></div>
+<div class='card'><h2>Darwin Promotion Listener</h2><pre>{
+  &quot;status&quot;: &quot;COMPLETED&quot;,
+  &quot;run_id&quot;: &quot;darwin_promotion_listener_20260518_003122&quot;,
+  &quot;summary&quot;: {
+    &quot;source_engine_candidates&quot;: 6,
+    &quot;selected_for_listener_apply&quot;: 2,
+    &quot;applied&quot;: 2,
+    &quot;auto_applied&quot;: 2,
+    &quot;queued_for_rescue&quot;: 0,
+    &quot;ready_queue_count&quot;: 0,
+    &quot;errors&quot;: 0
+  },
+  &quot;report_path&quot;: &quot;C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\promotion_listener\\promotion_listener_latest.json&quot;,
+  &quot;stage_count&quot;: 3,
+  &quot;errors&quot;: []
+}</pre></div>
+<div class='card'><h2>Results</h2><table><tr><th>Verdict</th><th>Regime</th><th>Recipe</th><th>Parent</th><th>Candidate</th><th>Score</th><th>APR Delta</th><th>DD Delta</th><th>Trade Delta</th><th>Fee Delta</th></tr><tr><td>WATCH</td><td>BEAR_TREND</td><td>fee_churn_aggressive_guarded</td><td>PMV3_BEAR_TREND_starter_002</td><td>PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC</td><td>3549.292847</td><td>24.102863</td><td>12.593877</td><td>-229</td><td>-753.906044</td></tr><tr><td>WATCH</td><td>BEAR_TREND</td><td>fee_churn_balanced</td><td>PMV3_BEAR_TREND_starter_002</td><td>PMV3_BEAR_TREND_fee_churn_balanced_1396AB3BF6</td><td>3198.157562</td><td>21.808974</td><td>11.19826</td><td>-169</td><td>-579.052433</td></tr><tr><td>WATCH</td><td>BEAR_TREND</td><td>fee_churn_conservative</td><td>PMV3_BEAR_TREND_starter_002</td><td>PMV3_BEAR_TREND_fee_churn_conservative_7B47DB4696</td><td>2345.170281</td><td>16.072742</td><td>7.972775</td><td>-99</td><td>-329.77772</td></tr><tr><td>WATCH</td><td>SIDEWAYS_BULL_RANGE</td><td>fee_churn_aggressive_guarded</td><td>PMV3_SIDEWAYS_BULL_RANGE_starter_008</td><td>PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0</td><td>640.253378</td><td>3.885461</td><td>3.355466</td><td>-24</td><td>-309.597367</td></tr><tr><td>WATCH</td><td>SIDEWAYS_BULL_RANGE</td><td>fee_churn_conservative</td><td>PMV3_SIDEWAYS_BULL_RANGE_starter_008</td><td>PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_4068A05FBE</td><td>452.950843</td><td>2.937315</td><td>1.918732</td><td>-6</td><td>-128.393258</td></tr><tr><td>WATCH</td><td>SIDEWAYS_BULL_RANGE</td><td>fee_churn_balanced</td><td>PMV3_SIDEWAYS_BULL_RANGE_starter_008</td><td>PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_6BC70433EB</td><td>440.826711</td><td>2.655962</td><td>2.333762</td><td>-17</td><td>-238.331424</td></tr></table></div>
+</body></html>

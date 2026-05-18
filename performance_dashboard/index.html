@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profit Monkey V3 Performance Dashboard</title>
+<style>
+:root{--bg:#0c1016;--card:#141b26;--line:#263244;--text:#e8eef7;--muted:#94a3b8;--good:#86efac;--bad:#fca5a5;--accent:#7dd3fc}
+body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);margin:0}.wrap{padding:18px;max-width:1500px;margin:auto}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:12px 0;box-shadow:0 8px 30px #0005}.grid{display:grid;grid-template-columns:repeat(4,minmax(170px,1fr));gap:12px}.metric{font-size:28px;font-weight:800}.muted{color:var(--muted)}button,select{background:#0f1722;color:var(--text);border:1px solid #334155;border-radius:10px;padding:8px}canvas{width:100%;height:430px;background:#0b111a;border-radius:12px}table{width:100%;border-collapse:collapse;font-size:13px}th,td{border-bottom:1px solid #293548;padding:7px;text-align:left}.good{color:var(--good)}.bad{color:var(--bad)}.pill{background:#243449;border-radius:999px;padding:3px 8px}.warn{border-color:#7c2d12;background:#1b1410}.ok{border-color:#14532d}.small{font-size:12px}.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.selectbox{min-width:70%;max-width:100%;height:150px;margin-top:10px}.diag{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;font-size:12px;color:#cbd5e1;max-height:180px;overflow:auto}.hide{display:none}@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(150px,1fr))}.wrap{padding:10px}.metric{font-size:22px}}
+</style>
+<style>.pmv3-home{display:inline-block;position:relative;z-index:9999;margin:10px 0 14px 0;background:#122033;color:#7dd3fc;border:1px solid #263244;border-radius:999px;padding:8px 12px;text-decoration:none;font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-weight:800}.pmv3-home:hover{filter:brightness(1.15)}</style></head>
+<body><a class="pmv3-home" href="../index.html">HOME</a>
+<div class="wrap">
+<h1>Profit Monkey V3 Performance Dashboard</h1>
+<p class="muted">GitHub-ready visualizer for full validation, champion overlays, regime segments, trades, and progress.</p>
+<div class="card">
+  <div class="toolbar">
+    <button onclick="loadAll()">Refresh data</button>
+    <label><input type="checkbox" id="showFull" checked> Full chronological</label>
+    <label><input type="checkbox" id="showChamp" checked> Champion curves</label>
+    <label><input type="checkbox" id="showDiag"> Diagnostics</label>
+  </div>
+  <select id="champSelect" multiple class="selectbox"></select>
+  <div id="dataStatus" class="muted small" style="margin-top:10px"></div>
+</div>
+<div id="diagCard" class="card hide"><h2>Data Diagnostics</h2><div id="diagnostics" class="diag"></div></div>
+<div class="grid" id="metrics"></div>
+<div class="card"><h2>Equity Curves</h2><canvas id="chart" width="1400" height="430"></canvas></div>
+<div class="card"><h2>Regime Segments</h2><div id="segments"></div></div>
+<div class="card"><h2>Latest Champion Tests</h2><div id="champions"></div></div>
+<div class="card"><h2>Recent Trades / Handoffs</h2><div id="trades"></div></div>
+</div>
+<script>
+const VIS='0.4.14';
+let DATA={diag:[]};
+function cacheBust(){return '?v='+Date.now()}
+async function getOne(p){
+  try{
+    let r=await fetch(p+cacheBust(),{cache:'no-store'});
+    if(!r.ok){DATA.diag.push({path:p,ok:false,status:r.status,note:'HTTP '+r.status});return null}
+    let j=await r.json();
+    DATA.diag.push({path:p,ok:true,status:r.status,keys:Object.keys(j||{}).slice(0,12)});
+    return j;
+  }catch(e){DATA.diag.push({path:p,ok:false,error:String(e)});return null}
+}
+async function getFirst(paths,fb){for(const p of paths){let j=await getOne(p);if(j!=null)return {json:j,path:p}}return {json:fb,path:null}}
+function fmt(n,d=2){return n==null||n===''||isNaN(Number(n))?'n/a':Number(n).toFixed(d)}
+function money(n){return n==null||isNaN(Number(n))?'$n/a':'$'+Number(n).toLocaleString(undefined,{maximumFractionDigits:2})}
+function col(i){return ['#7dd3fc','#86efac','#fbbf24','#f0abfc','#fb7185','#c4b5fd','#fcd34d','#67e8f9'][i%8]}
+function firstVal(obj,keys,fb=null){for(const k of keys){if(obj&&obj[k]!=null)return obj[k]}return fb}
+function normalizeSummary(obj){
+  if(!obj||typeof obj!=='object')return {};
+  if(obj.summary&&typeof obj.summary==='object')return obj.summary;
+  if(obj.full_validation_latest&&typeof obj.full_validation_latest==='object')return normalizeSummary(obj.full_validation_latest);
+  if(obj.latest&&typeof obj.latest==='object')return normalizeSummary(obj.latest);
+  return obj;
+}
+function normalizeCurve(obj){
+  if(!obj)return [];
+  if(Array.isArray(obj))return obj;
+  if(Array.isArray(obj.equity_curve))return obj.equity_curve;
+  if(Array.isArray(obj.data))return obj.data;
+  if(Array.isArray(obj.curve))return obj.curve;
+  if(Array.isArray(obj.points))return obj.points;
+  return [];
+}
+function normalizeTrades(obj){return obj&&Array.isArray(obj.trades)?obj.trades:(Array.isArray(obj)?obj:[])}
+function normalizeSegments(obj){return obj&&Array.isArray(obj.segments)?obj.segments:(Array.isArray(obj)?obj:[])}
+async function loadAll(){
+  DATA={diag:[]};
+  const status=await getFirst(['../data/status_bundle.json','data/status_bundle.json'],{}); DATA.bundle=status.json||{};
+  const f=await getFirst(['data/full_validation_latest.json'],{}); DATA.f=normalizeSummary(f.json);
+  if(!Object.keys(DATA.f).length && DATA.bundle.full_validation_latest){DATA.f=normalizeSummary(DATA.bundle.full_validation_latest);DATA.diag.push({path:'../data/status_bundle.json/full_validation_latest',ok:true,note:'summary fallback used'})}
+  let fc=await getFirst(['data/full_validation_equity_curve_web.json','data/full_validation_equity_curve.json'],{equity_curve:[]});
+  DATA.fc=fc.json||{equity_curve:[]};
+  if(DATA.fc && DATA.fc.web_lite_file){let p='data/'+DATA.fc.web_lite_file;let lite=await getFirst([p],{equity_curve:[]});DATA.fc=lite.json||DATA.fc;DATA.diag.push({path:p,ok:true,note:'followed web_lite_file pointer'})}
+  DATA.fullCurve=normalizeCurve(DATA.fc);
+  const ft=await getFirst(['data/full_validation_trades.json'],{trades:[]}); DATA.trades=normalizeTrades(ft.json);
+  const seg=await getFirst(['data/full_validation_regime_segments.json'],{segments:[]}); DATA.segments=normalizeSegments(seg.json);
+  const st=await getFirst(['data/strategy_test_results.json'],{}); DATA.st=st.json||{};
+  const cc=await getFirst(['data/champion_curves.json'],{champions:[]}); DATA.cc=cc.json||{champions:[]};
+  render();
+}
+function render(){metrics();selects();draw();segments();champs();trades();diagnostics()}
+function metrics(){
+  let f=DATA.f||{}, b=firstVal(f,['baseline_buy_hold','buy_hold','buy_and_hold'],{})||{};
+  let total=firstVal(f,['total_return_pct','return_pct','full_return_pct']);
+  let apr=firstVal(f,['apr_estimate','apr_pct','full_apr']);
+  let finalEq=firstVal(f,['final_equity','ending_equity','final_value']);
+  let dd=firstVal(f,['max_drawdown_pct','max_dd_pct','drawdown_pct']);
+  let tradeCount=firstVal(f,['trade_count','trades'],DATA.trades?DATA.trades.length:0);
+  let fees=firstVal(f,['fee_total','fees_total','fees']);
+  let bh=firstVal(b,['total_return_pct','return_pct']);
+  let sym=firstVal(f,['symbol','anchor_symbol','pair'],'n/a');
+  document.getElementById('metrics').innerHTML=[['Full return',fmt(total)+'%'],['Full APR',fmt(apr)+'%'],['Final $',money(finalEq)],['Max DD',fmt(dd)+'%'],['Trades',tradeCount||0],['Fees',money(fees)],['Buy/Hold',fmt(bh)+'%'],['Symbol',sym||'n/a']].map(x=>`<div class="card"><div class="muted">${x[0]}</div><div class="metric">${x[1]}</div></div>`).join('')
+}
+function selects(){
+  let s=document.getElementById('champSelect'),old=[...s.selectedOptions].map(o=>o.value);s.innerHTML='';
+  let champs=(DATA.cc&&DATA.cc.champions)||[];
+  champs.forEach((c,i)=>{let m=c.summary||{},o=document.createElement('option');o.value=i;o.textContent=(m.regime||'?')+' | '+(m.champion_id||'?')+' | '+fmt(firstVal(m,['total_return_pct','return_pct']))+'%';if(old.includes(String(i))||old.length===0)o.selected=true;s.appendChild(o)});
+  if(!champs.length){let o=document.createElement('option');o.textContent='No champion curves loaded. Run Strategy Tester, then regenerate this dashboard.';s.appendChild(o)}
+  s.onchange=draw;showFull.onchange=draw;showChamp.onchange=draw;showDiag.onchange=diagnostics;
+}
+function pointY(x){return firstVal(x,['equity','portfolio_value','value','account_value','final_equity','end_equity'])}
+function pts(curve){return (curve||[]).map((x,i)=>({x:i,y:Number(pointY(x))})).filter(p=>Number.isFinite(p.y))}
+function draw(){
+  let c=document.getElementById('chart'),ctx=c.getContext('2d'),W=c.width,H=c.height;ctx.clearRect(0,0,W,H);let ser=[];
+  if(showFull.checked)ser.push({n:'Full chronological',d:pts(DATA.fullCurve),c:'#e2e8f0'});
+  if(showChamp.checked&&DATA.cc&&DATA.cc.champions)[...champSelect.selectedOptions].forEach((o,j)=>{let x=DATA.cc.champions[Number(o.value)]||{},m=x.summary||{};ser.push({n:m.regime||m.champion_id||('Champion '+j),d:pts(x.equity_curve),c:col(j)})});
+  let all=ser.flatMap(s=>s.d);
+  if(!all.length){ctx.fillStyle='#94a3b8';ctx.font='18px system-ui';ctx.fillText('No curve data loaded. Check Diagnostics. Run Strategy Tester and Full Chronological Validation, then regenerate and push the dashboard.',30,50);return}
+  let min=Math.min(...all.map(p=>p.y)),max=Math.max(...all.map(p=>p.y));if(min===max){min-=1;max+=1}
+  ctx.strokeStyle='#334155';ctx.lineWidth=1;ctx.font='13px system-ui';
+  for(let i=0;i<6;i++){let y=30+i*(H-70)/5;ctx.beginPath();ctx.moveTo(60,y);ctx.lineTo(W-20,y);ctx.stroke();ctx.fillStyle='#94a3b8';ctx.fillText('$'+fmt(max-(max-min)*i/5,0),8,y+4)}
+  ser.forEach((s,si)=>{if(!s.d.length)return;ctx.strokeStyle=s.c;ctx.lineWidth=si===0?3:1.5;ctx.beginPath();s.d.forEach((p,i)=>{let x=60+i*(W-90)/Math.max(1,s.d.length-1),y=30+(max-p.y)*(H-70)/(max-min);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)});ctx.stroke();ctx.fillStyle=s.c;ctx.fillText(s.n+' ('+s.d.length+' pts)',70,22+si*18)})
+}
+function segments(){let rows=DATA.segments||[];document.getElementById('segments').innerHTML='<table><tr><th>Regime</th><th>Start</th><th>End</th><th>Start $</th><th>End $</th><th>Return</th></tr>'+rows.slice(-250).map(r=>`<tr><td><span class="pill">${r.regime||''}</span></td><td>${r.start_time||''}</td><td>${r.end_time||''}</td><td>${money(firstVal(r,['start_equity','starting_equity']))}</td><td>${money(firstVal(r,['end_equity','final_equity']))}</td><td class="${Number(firstVal(r,['return_pct','total_return_pct'],0))>=0?'good':'bad'}">${fmt(firstVal(r,['return_pct','total_return_pct']))}%</td></tr>`).join('')+'</table>'}
+function champs(){let rows=(DATA.st&&DATA.st.champion_results)||[];if(!rows.length&&DATA.st&&Array.isArray(DATA.st.results))rows=DATA.st.results;document.getElementById('champions').innerHTML='<table><tr><th>Regime</th><th>Champion</th><th>Return</th><th>APR</th><th>DD</th><th>Trades</th><th>Health</th></tr>'+rows.map(r=>`<tr><td>${r.regime||''}</td><td>${r.champion_id||''}</td><td class="${Number(firstVal(r,['total_return_pct','return_pct'],0))>=0?'good':'bad'}">${fmt(firstVal(r,['total_return_pct','return_pct']))}%</td><td>${fmt(firstVal(r,['apr_estimate','apr_pct']))}%</td><td class="bad">${fmt(firstVal(r,['max_drawdown_pct','max_dd_pct']))}%</td><td>${firstVal(r,['trade_count','trades'],0)||0}</td><td>${r.health||''}</td></tr>`).join('')+'</table>'}
+function trades(){let rows=(DATA.trades||[]).slice(-600);document.getElementById('trades').innerHTML='<table><tr><th>Time</th><th>Regime</th><th>Side</th><th>Champion</th><th>Price</th><th>Value</th><th>Reason</th></tr>'+rows.map(t=>`<tr><td>${t.time||t.timestamp||''}</td><td>${t.regime||''}</td><td>${t.side||t.action||''}</td><td>${t.champion_id||''}</td><td>${fmt(t.price)}</td><td>${money(firstVal(t,['gross_value','value','notional']))}</td><td>${t.reason||''}</td></tr>`).join('')+'</table>'}
+function diagnostics(){
+  let card=document.getElementById('diagCard');card.className=showDiag.checked?'card':'card hide';
+  let fPts=(DATA.fullCurve||[]).length, cCount=((DATA.cc&&DATA.cc.champions)||[]).length;
+  document.getElementById('dataStatus').innerHTML=`Loaded: full curve ${fPts} points, champion curves ${cCount}, trades ${(DATA.trades||[]).length}, segments ${(DATA.segments||[]).length}. Visualizer ${VIS}.`;
+  document.getElementById('diagnostics').textContent=JSON.stringify({visualizer:VIS,summary_keys:Object.keys(DATA.f||{}),full_curve_points:fPts,champion_curve_count:cCount,fetch_log:DATA.diag},null,2);
+}
+loadAll();
+</script>
+</body>
+</html>

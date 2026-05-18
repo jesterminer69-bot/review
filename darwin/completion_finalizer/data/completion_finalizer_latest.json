@@ -1,0 +1,58 @@
+{
+  "engine": {
+    "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\fee_churn_reducer\\fee_churn_reducer_latest.json",
+    "run_id": "darwin_fee_churn_short_20260518_003008",
+    "status": "COMPLETED",
+    "summary": {
+      "bad": 0,
+      "errors": 0,
+      "inconclusive": 0,
+      "promising": 0,
+      "promotion_candidates": 0,
+      "tested": 6,
+      "watch": 6
+    }
+  },
+  "finalizer_version": "0.6.4A",
+  "generated_at": "2026-05-18T17:46:59+00:00",
+  "listener": {
+    "matches_latest_engine": true,
+    "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\promotion_listener\\darwin_promotion_listener_20260518_003122.json",
+    "run_id": "darwin_promotion_listener_20260518_003122",
+    "source_engine_run_id": "darwin_fee_churn_short_20260518_003008",
+    "status": "COMPLETED",
+    "summary": {
+      "applied": 2,
+      "auto_applied": 2,
+      "errors": 0,
+      "queued_for_rescue": 0,
+      "ready_queue_count": 0,
+      "selected_for_listener_apply": 2,
+      "source_engine_candidates": 6
+    }
+  },
+  "reason": "live_check",
+  "report_paths": {
+    "json": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\completion_finalizer\\completion_finalizer_latest.json",
+    "txt": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\completion_finalizer\\completion_finalizer_latest.txt",
+    "web": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\darwin\\completion_finalizer\\index.html"
+  },
+  "schema_version": 1,
+  "status": "COMPLETED_WITH_LISTENER",
+  "summary": {
+    "applied": 2,
+    "errors": 0,
+    "latest_engine_run_id": "darwin_fee_churn_short_20260518_003008",
+    "listener_matches_engine": true,
+    "status": "COMPLETED_WITH_LISTENER",
+    "worker_active": false
+  },
+  "worker": {
+    "active": false,
+    "active_darwin_tasks": 0,
+    "active_tasks": 0,
+    "darwin_queue_size": 0,
+    "queue_size": 0,
+    "status": "GLOBAL_IDLE"
+  }
+}

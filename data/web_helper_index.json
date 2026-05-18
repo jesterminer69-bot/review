@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "publisher_version": "0.5.1",
+  "generated_at": "2026-05-18T17:47:07+00:00",
+  "reason": "dashboard_initial_push",
+  "helpers": [
+    {
+      "slug": "performance_dashboard",
+      "title": "Performance Dashboard",
+      "description": "Equity curves, validation summaries, portfolio behavior, and performance reports.",
+      "status": "published",
+      "source": "output/web/performance_dashboard"
+    },
+    {
+      "slug": "regime_review",
+      "title": "Regime Review",
+      "description": "Regime windows, transitions, shock/crash events, and latest regime visualization.",
+      "status": "published",
+      "source": "output/reports/regime_review"
+    },
+    {
+      "slug": "champions",
+      "title": "Champion Library",
+      "description": "Active, challenger, historical, rejected, and preset champion views.",
+      "status": "published",
+      "source": "output/web/champions"
+    },
+    {
+      "slug": "manual_champion_rebuild_workbench",
+      "title": "Manual Champion Rebuild Workbench",
+      "description": "Weak champion diagnostics, failure tags, trade-quality summaries, and rebuild guidance.",
+      "status": "published",
+      "source": "output/web/manual_champion_rebuild_workbench"
+    },
+    {
+      "slug": "candles_buy_sell_by_champion",
+      "title": "Candles Buy/Sell by Champion",
+      "description": "Candles, regime overlays, buy/sell markers, trade table, pan/zoom, and trade quality tools.",
+      "status": "published",
+      "source": "output/web/candles_buy_sell_by_champion"
+    },
+    {
+      "slug": "manual_rebuild_candidate_flow",
+      "title": "Manual Rebuild Candidate Flow",
+      "description": "Safe manual candidate creation workflow, request templates, and candidate packet status.",
+      "status": "published",
+      "source": "output/web/manual_rebuild_candidate_flow"
+    },
+    {
+      "slug": "candidate_effectiveness_tester",
+      "title": "Candidate Effectiveness Tester",
+      "description": "Short-profile parent-vs-candidate mutation measurement and zero-delta diagnostics.",
+      "status": "published",
+      "source": "output/web/candidate_effectiveness_tester"
+    },
+    {
+      "slug": "candidate_retest_ladder",
+      "title": "Candidate Retest Ladder",
+      "description": "Long and complete retest ladder for WATCH/PROMISING candidates.",
+      "status": "published",
+      "source": "output/web/candidate_retest_ladder"
+    },
+    {
+      "slug": "promotion_ready_candidate_review",
+      "title": "Promotion-Ready Candidate Review",
+      "description": "Ranked review of ladder survivors before any manual/gated apply.",
+      "status": "published",
+      "source": "output/web/promotion_ready_candidate_review"
+    },
+    {
+      "slug": "shadow_champion_impact",
+      "title": "Shadow Champion Impact Test",
+      "description": "Full-set shadow validation preview before replacing an active champion.",
+      "status": "published",
+      "source": "output/web/shadow_champion_impact"
+    },
+    {
+      "slug": "evolution_readiness",
+      "title": "Evolution Readiness",
+      "description": "Darwin readiness status, candidate lifecycle inventory, and evolution module contract status.",
+      "status": "published",
+      "source": "output/web/evolution_readiness"
+    },
+    {
+      "slug": "darwin",
+      "title": "DARWIN - Evolution Manager",
+      "description": "Darwin shell status, engine/testing registries, config, queue, and web report.",
+      "status": "published",
+      "source": "output/web/darwin"
+    },
+    {
+      "slug": "champion_same_regime_comparison",
+      "title": "Champion Same Regime Comparison",
+      "description": "Generated Profit Monkey V3 helper page.",
+      "status": "published",
+      "source": "output/web/champion_same_regime_comparison"
+    },
+    {
+      "slug": "task_verification",
+      "title": "Task Verification",
+      "description": "Generated Profit Monkey V3 helper page.",
+      "status": "published",
+      "source": "output/web/task_verification"
+    }
+  ]
+}

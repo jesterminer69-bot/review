@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "pipeline_version": "0.5.4",
+  "run_id": "darwin_auto_promotion_20260517_235905",
+  "generated_at": "2026-05-18T05:01:20+00:00",
+  "status": "COMPLETED_WITH_ERRORS",
+  "source_engine_id": "fee_churn_reducer_engine",
+  "source_engine_run_id": "darwin_fee_churn_short_20260517_235748",
+  "source_engine_report_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\fee_churn_reducer\\fee_churn_reducer_latest.json",
+  "policy": {
+    "auto_promotion_allowed": true,
+    "required_gates": [
+      "short",
+      "long",
+      "complete",
+      "shadow_full_set_positive",
+      "promotion_gate_promote",
+      "backup_success",
+      "champion_pool_history_save_success"
+    ],
+    "manual_approval_required": false,
+    "one_winner_per_parent_per_run": true
+  },
+  "stages": [
+    {
+      "stage": "retest_ladder",
+      "cmd": [
+        "C:\\Users\\marcg\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "tools/pmv3_candidate_retest_ladder.py",
+        "--root",
+        "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3",
+        "--source",
+        "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\darwin\\fee_churn_reducer\\fee_churn_reducer_latest.json",
+        "--profiles",
+        "long,complete",
+        "--max-candidates",
+        "6",
+        "--min-score",
+        "5.0",
+        "--no-prompt"
+      ],
+      "started_at": "2026-05-18T04:59:05+00:00",
+      "completed_at": "2026-05-18T05:01:20+00:00",
+      "returncode": 1,
+      "stdout_tail": "Selected 6 candidate(s). Profiles: long, complete\nNothing will be applied to active champions.\n\n[1/6] Candidate=PMV3_BEAR_TREND_fee_churn_aggressive_guarded_9F441D8823 Regime=BEAR_TREND Direction=\n    Retesting LONG...\n        -> ERROR: 'charmap' codec can't encode character '\\u0394' in position 68: character maps to <undefined>\n    Overall: PARTIAL_CONFIRMATION\n[2/6] Candidate=PMV3_BEAR_TREND_fee_churn_balanced_8633C0A3D1 Regime=BEAR_TREND Direction=\n    Retesting LONG...\n        -> ERROR: 'charmap' codec can't encode character '\\u0394' in position 68: character maps to <undefined>\n    Overall: PARTIAL_CONFIRMATION\n[3/6] Candidate=PMV3_BEAR_TREND_fee_churn_conservative_E3C04F6AD4 Regime=BEAR_TREND Direction=\n    Retesting LONG...\n        -> ERROR: 'charmap' codec can't encode character '\\u0394' in position 68: character maps to <undefined>\n    Overall: PARTIAL_CONFIRMATION\n[4/6] Candidate=PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DACEC4E3D2 Regime=SIDEWAYS_BULL_RANGE Direction=\n    Retesting LONG...\n        -> ERROR: 'charmap' codec can't encode character '\\u0394' in position 68: character maps to <undefined>\n    Overall: PARTIAL_CONFIRMATION\n[5/6] Candidate=PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_A504835F56 Regime=SIDEWAYS_BULL_RANGE Direction=\n    Retesting LONG...\n        -> ERROR: 'charmap' codec can't encode character '\\u0394' in position 67: character maps to <undefined>\n    Overall: PARTIAL_CONFIRMATION\n[6/6] Candidate=PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9AFC4499EE Regime=SIDEWAYS_BULL_RANGE Direction=\n    Retesting LONG...\n        -> ERROR: 'charmap' codec can't encode character '\\u0394' in position 68: character maps to <undefined>\n    Overall: PARTIAL_CONFIRMATION\n\nDONE. No candidates were applied.\nText report: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.txt\nCSV report:  C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.csv\nJSON report: C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\candidate_retest_ladder\\candidate_retest_ladder_latest.json\nWeb report:  C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\candidate_retest_ladder\\index.html\n",
+      "stderr_tail": "",
+      "ok": false
+    }
+  ],
+  "apply_results": [],
+  "errors": [
+    {
+      "stage": "auto_promotion_pipeline",
+      "error": "RuntimeError: Candidate Retest Ladder failed. See stage stdout/stderr.",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\pm3\\evolution\\auto_promotion_pipeline.py\", line 459, in run_auto_promotion_after_engine\n    raise RuntimeError(\"Candidate Retest Ladder failed. See stage stdout/stderr.\")\nRuntimeError: Candidate Retest Ladder failed. See stage stdout/stderr.\n"
+    }
+  ],
+  "summary": {
+    "source_engine_candidates": 6,
+    "selected_for_auto_apply": 0,
+    "auto_applied": 0,
+    "queued_for_rescue": 0,
+    "ready_queue_count": 0,
+    "errors": 2
+  }
+}

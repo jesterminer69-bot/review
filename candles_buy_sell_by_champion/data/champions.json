@@ -1,0 +1,664 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-18T17:47:06+00:00",
+  "champions": [
+    {
+      "public_id": "FDCA0C5452",
+      "champion_id": "PMV3_BEAR_DUMP_starter_001",
+      "regime": "BEAR_DUMP",
+      "status": "ACTIVE",
+      "health": "OK"
+    },
+    {
+      "public_id": "5306E9A385",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "ACTIVE",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "BD444817DF",
+      "champion_id": "PMV3_BULL_IMPULSE_starter_003",
+      "regime": "BULL_IMPULSE",
+      "status": "ACTIVE",
+      "health": "WEAK"
+    },
+    {
+      "public_id": "037C07898E",
+      "champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "regime": "BULL_PULLBACK",
+      "status": "ACTIVE",
+      "health": "WEAK"
+    },
+    {
+      "public_id": "67621C5236",
+      "champion_id": "PMV3_CRASH_starter_005",
+      "regime": "CRASH",
+      "status": "ACTIVE",
+      "health": "WATCH"
+    },
+    {
+      "public_id": "9C8D5299ED",
+      "champion_id": "PMV3_HIGH_VOL_REVERSAL_starter_006",
+      "regime": "HIGH_VOL_REVERSAL",
+      "status": "ACTIVE",
+      "health": "WEAK"
+    },
+    {
+      "public_id": "E179C7D3E1",
+      "champion_id": "PMV3_SIDEWAYS_BEAR_RANGE_starter_007",
+      "regime": "SIDEWAYS_BEAR_RANGE",
+      "status": "ACTIVE",
+      "health": "WEAK"
+    },
+    {
+      "public_id": "B5E0E94F8B",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "ACTIVE",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "ACBF4A7599",
+      "champion_id": "PMV3_BEAR_TREND_manual_reduce_fee_churn_EE7F69B097",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "3FFA7F6185",
+      "champion_id": "PMV3_BEAR_TREND_manual_drawdown_protection_9BF41CA98D",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "CF88CA0603",
+      "champion_id": "PMV3_BULL_PULLBACK_manual_reduce_fee_churn_463A253248",
+      "regime": "BULL_PULLBACK",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "0059D515C4",
+      "champion_id": "PMV3_BULL_PULLBACK_manual_drawdown_protection_690AC7F2AE",
+      "regime": "BULL_PULLBACK",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6F35C5E53B",
+      "champion_id": "PMV3_BEAR_TREND_manual_reduce_fee_churn_8AA0754413",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6B04B3EAE4",
+      "champion_id": "PMV3_BEAR_TREND_manual_drawdown_protection_C07B7AB587",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "B298B0F001",
+      "champion_id": "PMV3_BULL_PULLBACK_manual_reduce_fee_churn_6965C7C784",
+      "regime": "BULL_PULLBACK",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "F366AF08B0",
+      "champion_id": "PMV3_BULL_PULLBACK_manual_drawdown_protection_630F15E6EB",
+      "regime": "BULL_PULLBACK",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "09778E8F64",
+      "champion_id": "PMV3_BEAR_TREND_manual_reduce_fee_churn_983789791E",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "DE5A41EAB2",
+      "champion_id": "PMV3_BEAR_TREND_manual_drawdown_protection_8A898A76C3",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "4901141B07",
+      "champion_id": "PMV3_BULL_PULLBACK_manual_reduce_fee_churn_36DB8F1A80",
+      "regime": "BULL_PULLBACK",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "28158A1EB0",
+      "champion_id": "PMV3_BULL_PULLBACK_manual_drawdown_protection_4AF6355A6B",
+      "regime": "BULL_PULLBACK",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6B3366F60A",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_487B8DE8D1",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "8BC387B7DE",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_FEB0A5F012",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "E0FB36C83D",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_F9DAB96E24",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "CE66F65CC2",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_7D138B604C",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "97967327C9",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_BD0985642E",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "45B7C0BAC2",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_23B8607EDE",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "7CC8C76E88",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_E3C04F6AD4",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "7CAC91AB43",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_8633C0A3D1",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6E4E4E9148",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_9F441D8823",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "D251165E64",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_A504835F56",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "BB36CDF91D",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9AFC4499EE",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "0EFCC951B3",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DACEC4E3D2",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "9E2D18690B",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_94340E8F82",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "EA769D6E8F",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_AEACAF1FC3",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "7469EED017",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_9E476CFA89",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "F993DF55A3",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_BE356F23DD",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "7F7CF15EAB",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_B13AC4E830",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "99446A9FDC",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_2B3AAE1460",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "0B8CC8F328",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_7B47DB4696",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "516089350A",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_1396AB3BF6",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "5306E9A385",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_672FF5F9FC",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "2533266F4B",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_4068A05FBE",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "547B8F1385",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_6BC70433EB",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "B5E0E94F8B",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_59E0B0B2F0",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "ABDB087D2C",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_7D21410C52",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "BC411FF4AC",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_79CC603362",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "B7DCE3E41D",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_A95D17BBE0",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "3E810651D8",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_9935316A58",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "07E222F4C3",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_2AD03BA6EF",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "5738627A50",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_1A6FD8E4F2",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6BA698ED42",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_41CB69F65A",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "3B0DA8E4F8",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_09769EF046",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "5F7489797D",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_E1B987A677",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "436A8A1D97",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_0473DFF672",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "9E546C4200",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_812DC0642B",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "DD2F9ED1EA",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_B0930CB7C3",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "E909BF327C",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_C550FE0F8E",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "9992221810",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_04477F7572",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6F3ED51BDB",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_8C38F87599",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "3102D41555",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_175096CACC",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "9F144808D8",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_F7CCE6E969",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "7C394F9D91",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DA2C15C545",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "77C7821C07",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_8EF8DDB129",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "C7EFB9BC7E",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_25172C62CF",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "DD6F0DCC31",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_DD778A8041",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "B261FA1599",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_464EE50300",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "83B1803794",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9C7EFBE60F",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "67812428EB",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_8F677FB227",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "2FC4D4FE5F",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_10A71C06A6",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "AAE4285CDB",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_3C36D4740B",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "302CE89D8E",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_5E1F90ACFB",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "D9109EE2FA",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_22022486D7",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6E0AC4E108",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_BCE311C3EB",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "B8E204F586",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_DDB0744730",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "E06118519E",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_7F0E2298BD",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "7FAD1A008C",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_8AD83B23DA",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "311FA9625B",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_444D7EB22E",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "1B0676BE60",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_5735AD2278",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "0008A477C9",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_AD06D20C64",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "99630A841A",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_F1BFA0C009",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "9F27157870",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_73ECCE0789",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "5A0B101DB8",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_15C4CB7E87",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "A243C3924D",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_7CB91552D1",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "2A09616A44",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_92520159A1",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "E810C440BF",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_9F35AA1766",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "B7EF33B199",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_12BB4E3FCC",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "949DFCFFB9",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_conservative_5E9E389E95",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "799426E7FA",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_balanced_37BF7B8566",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "EDE54C1470",
+      "champion_id": "PMV3_BEAR_TREND_fee_churn_aggressive_guarded_D7A7F7E84F",
+      "regime": "BEAR_TREND",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "7C036BD43A",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_conservative_33ED888462",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "4812B783AA",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_balanced_D923103802",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "6DDB1C8C99",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_fee_churn_aggressive_guarded_EBF5257483",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "CHALLENGER",
+      "health": "candidate_not_tested"
+    },
+    {
+      "public_id": "1C00743BE0",
+      "champion_id": "PMV3_SIDEWAYS_BULL_RANGE_starter_008",
+      "regime": "SIDEWAYS_BULL_RANGE",
+      "status": "RETIRED",
+      "health": "DEAD"
+    },
+    {
+      "public_id": "1D5DF19CE3",
+      "champion_id": "PMV3_BEAR_TREND_starter_002",
+      "regime": "BEAR_TREND",
+      "status": "RETIRED",
+      "health": "DEAD"
+    }
+  ]
+}

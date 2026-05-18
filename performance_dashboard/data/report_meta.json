@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "visualizer_version": "0.4.14",
+  "generated_at": "2026-05-18T14:45:50+00:00",
+  "status": "completed",
+  "path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\performance_dashboard\\index.html",
+  "web_data_manifest": [
+    {
+      "source": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\full_validation\\full_chrono_validation_20260518_094537\\equity_curve.json",
+      "dest": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\performance_dashboard\\data\\full_validation_equity_curve.json",
+      "source_exists": true,
+      "source_bytes": 198448788,
+      "source_points": 524894,
+      "published_points": 7000,
+      "published_bytes": 1933165,
+      "mode": "web_downsampled"
+    },
+    {
+      "source": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\performance_dashboard\\data\\full_validation_equity_curve.json",
+      "dest": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\performance_dashboard\\data\\full_validation_equity_curve_web.json",
+      "mode": "web_alias",
+      "published_bytes": 1933165
+    },
+    {
+      "source": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\full_validation\\full_chrono_validation_20260518_094537\\trades.json",
+      "dest": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\performance_dashboard\\data\\full_validation_trades.json",
+      "source_exists": true,
+      "source_bytes": 975097,
+      "source_points": 2484,
+      "published_bytes": 975263,
+      "mode": "limited_list"
+    },
+    {
+      "source": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\reports\\full_validation\\full_chrono_validation_20260518_094537\\regime_segments.json",
+      "dest": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\output\\web\\performance_dashboard\\data\\full_validation_regime_segments.json",
+      "source_exists": true,
+      "source_bytes": 18300,
+      "source_points": 75,
+      "published_bytes": 18462,
+      "mode": "limited_list"
+    }
+  ]
+}

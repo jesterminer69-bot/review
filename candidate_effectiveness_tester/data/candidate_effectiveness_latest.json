@@ -1,0 +1,249 @@
+{
+  "candidate_count": 4,
+  "directions": [
+    "reduce_fee_churn",
+    "drawdown_protection"
+  ],
+  "errors": [],
+  "generated_at": "2026-05-17T22:59:18+00:00",
+  "parent_count": 2,
+  "profile": "short",
+  "results": [
+    {
+      "apr_delta": 21.808974,
+      "candidate_apr": -13.177299,
+      "candidate_dd": -6.497197,
+      "candidate_fees": 449.485539,
+      "candidate_id": "PMV3_BEAR_TREND_manual_reduce_fee_churn_983789791E",
+      "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_reduce_fee_churn_983789791E.json",
+      "candidate_score": -18.336081,
+      "candidate_trades": 462,
+      "change_summary": [
+        "buy_fraction: 0.05 -> 0.0275",
+        "max_exposure: 0.22 -> 0.143",
+        "min_bars_between_buys: 60 -> 105",
+        "profit_target_pct: 3.0 -> 3.24"
+      ],
+      "changed_profile_keys": {
+        "buy_fraction": {
+          "candidate": 0.0275,
+          "parent": 0.05
+        },
+        "max_exposure": {
+          "candidate": 0.143,
+          "parent": 0.22
+        },
+        "min_bars_between_buys": {
+          "candidate": 105,
+          "parent": 60
+        },
+        "profit_target_pct": {
+          "candidate": 3.24,
+          "parent": 3.0
+        }
+      },
+      "comparison_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\comparisons\\PMV3_BEAR_TREND_manual_reduce_fee_churn_983789791E_short_20260517_175854.json",
+      "decision": "WATCH",
+      "direction": "reduce_fee_churn",
+      "drawdown_delta": 11.19826,
+      "effectiveness_score": 3198.157562,
+      "fee_delta": -579.052433,
+      "measurement_note": "Candidate produced measurable parent-vs-candidate differences.",
+      "parent_apr": -34.986273,
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "parent_dd": -17.695457,
+      "parent_fees": 1028.537972,
+      "parent_public_id": "",
+      "parent_score": -87.481185,
+      "parent_trades": 631,
+      "profile": "short",
+      "regime": "BEAR_TREND",
+      "run_id": "candidate_effectiveness_short_20260517_175841",
+      "score_delta": 69.145104,
+      "trade_delta": -169,
+      "verdict": "WATCH",
+      "zero_delta": false
+    },
+    {
+      "apr_delta": 5.625751,
+      "candidate_apr": -29.360522,
+      "candidate_dd": -14.513358,
+      "candidate_fees": 905.25699,
+      "candidate_id": "PMV3_BEAR_TREND_manual_drawdown_protection_8A898A76C3",
+      "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BEAR_TREND_manual_drawdown_protection_8A898A76C3.json",
+      "candidate_score": -68.482942,
+      "candidate_trades": 742,
+      "change_summary": [
+        "buy_fraction: 0.05 -> 0.0375",
+        "max_exposure: 0.22 -> 0.176",
+        "stop_loss_pct: 2.4 -> 1.56",
+        "trailing_stop_pct: 3.2 -> 2.24"
+      ],
+      "changed_profile_keys": {
+        "buy_fraction": {
+          "candidate": 0.0375,
+          "parent": 0.05
+        },
+        "max_exposure": {
+          "candidate": 0.176,
+          "parent": 0.22
+        },
+        "stop_loss_pct": {
+          "candidate": 1.56,
+          "parent": 2.4
+        },
+        "trailing_stop_pct": {
+          "candidate": 2.24,
+          "parent": 3.2
+        }
+      },
+      "comparison_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\comparisons\\PMV3_BEAR_TREND_manual_drawdown_protection_8A898A76C3_short_20260517_175908.json",
+      "decision": "WATCH",
+      "direction": "drawdown_protection",
+      "drawdown_delta": 3.182099,
+      "effectiveness_score": 838.274054,
+      "fee_delta": -123.280982,
+      "measurement_note": "Candidate produced measurable parent-vs-candidate differences.",
+      "parent_apr": -34.986273,
+      "parent_champion_id": "PMV3_BEAR_TREND_starter_002",
+      "parent_dd": -17.695457,
+      "parent_fees": 1028.537972,
+      "parent_public_id": "",
+      "parent_score": -87.481185,
+      "parent_trades": 631,
+      "profile": "short",
+      "regime": "BEAR_TREND",
+      "run_id": "candidate_effectiveness_short_20260517_175841",
+      "score_delta": 18.998243,
+      "trade_delta": 111,
+      "verdict": "WATCH",
+      "zero_delta": false
+    },
+    {
+      "apr_delta": 7.444714,
+      "candidate_apr": 5.793341,
+      "candidate_dd": -1.304522,
+      "candidate_fees": 45.454565,
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_drawdown_protection_4AF6355A6B",
+      "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_drawdown_protection_4AF6355A6B.json",
+      "candidate_score": 3.315271,
+      "candidate_trades": 16,
+      "change_summary": [
+        "buy_fraction: 0.13 -> 0.0975",
+        "max_exposure: 0.55 -> 0.44",
+        "stop_loss_pct: 3.8 -> 2.47",
+        "trailing_stop_pct: 4.5 -> 3.15"
+      ],
+      "changed_profile_keys": {
+        "buy_fraction": {
+          "candidate": 0.0975,
+          "parent": 0.13
+        },
+        "max_exposure": {
+          "candidate": 0.44,
+          "parent": 0.55
+        },
+        "stop_loss_pct": {
+          "candidate": 2.47,
+          "parent": 3.8
+        },
+        "trailing_stop_pct": {
+          "candidate": 3.15,
+          "parent": 4.5
+        }
+      },
+      "comparison_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\comparisons\\PMV3_BULL_PULLBACK_manual_drawdown_protection_4AF6355A6B_short_20260517_175918.json",
+      "decision": "WATCH",
+      "direction": "drawdown_protection",
+      "drawdown_delta": 0.622809,
+      "effectiveness_score": 805.974836,
+      "fee_delta": -14.972017,
+      "measurement_note": "Candidate produced measurable parent-vs-candidate differences.",
+      "parent_apr": -1.651373,
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "parent_dd": -1.927331,
+      "parent_fees": 60.426582,
+      "parent_public_id": "",
+      "parent_score": -1.20319,
+      "parent_trades": 15,
+      "profile": "short",
+      "regime": "BULL_PULLBACK",
+      "run_id": "candidate_effectiveness_short_20260517_175841",
+      "score_delta": 4.518461,
+      "trade_delta": 1,
+      "verdict": "WATCH",
+      "zero_delta": false
+    },
+    {
+      "apr_delta": 1.905621,
+      "candidate_apr": 0.254248,
+      "candidate_dd": -1.009036,
+      "candidate_fees": 29.646964,
+      "candidate_id": "PMV3_BULL_PULLBACK_manual_reduce_fee_churn_36DB8F1A80",
+      "candidate_packet_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\candidates\\PMV3_BULL_PULLBACK_manual_reduce_fee_churn_36DB8F1A80.json",
+      "candidate_score": 0.995789,
+      "candidate_trades": 14,
+      "change_summary": [
+        "buy_fraction: 0.13 -> 0.0715",
+        "max_exposure: 0.55 -> 0.3575",
+        "min_bars_between_buys: 20 -> 35",
+        "profit_target_pct: 6.5 -> 7.02"
+      ],
+      "changed_profile_keys": {
+        "buy_fraction": {
+          "candidate": 0.0715,
+          "parent": 0.13
+        },
+        "max_exposure": {
+          "candidate": 0.3575,
+          "parent": 0.55
+        },
+        "min_bars_between_buys": {
+          "candidate": 35,
+          "parent": 20
+        },
+        "profit_target_pct": {
+          "candidate": 7.02,
+          "parent": 6.5
+        }
+      },
+      "comparison_path": "C:\\Users\\marcg\\Documents\\kraken-bot\\profit-monkey-v3\\data\\champions\\rebuild_candidates\\comparisons\\PMV3_BULL_PULLBACK_manual_reduce_fee_churn_36DB8F1A80_short_20260517_175913.json",
+      "decision": "WATCH",
+      "direction": "reduce_fee_churn",
+      "drawdown_delta": 0.918295,
+      "effectiveness_score": 237.148246,
+      "fee_delta": -30.779618,
+      "measurement_note": "Candidate produced measurable parent-vs-candidate differences.",
+      "parent_apr": -1.651373,
+      "parent_champion_id": "PMV3_BULL_PULLBACK_starter_004",
+      "parent_dd": -1.927331,
+      "parent_fees": 60.426582,
+      "parent_public_id": "",
+      "parent_score": -1.20319,
+      "parent_trades": 15,
+      "profile": "short",
+      "regime": "BULL_PULLBACK",
+      "run_id": "candidate_effectiveness_short_20260517_175841",
+      "score_delta": 2.198979,
+      "trade_delta": -1,
+      "verdict": "WATCH",
+      "zero_delta": false
+    }
+  ],
+  "run_id": "candidate_effectiveness_short_20260517_175841",
+  "safety": {
+    "active_champions_changed": false,
+    "candidates_applied": false,
+    "purpose": "Effectiveness testing only. Review results before any manual apply action."
+  },
+  "schema_version": 1,
+  "summary": {
+    "bad": 0,
+    "errors": 0,
+    "inconclusive": 0,
+    "promising": 0,
+    "watch": 4,
+    "zero_delta": 0
+  },
+  "tester_version": "0.4.53"
+}
